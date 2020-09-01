@@ -1,0 +1,43 @@
+h3{
+    padding: 0;
+    margin: 0;
+}
+.item{
+    width: 100%;
+}
+.id-name{
+    padding: 0;
+    height: 60px;
+    float: left;
+}
+.type-publishers{
+    width: 100px;
+    float: right;
+}
+
+.id-name .id{
+    width:20px;
+   line-height: 60px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.id-name .name{
+    line-height: 60px;
+    margin-left: 20px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.type-publishers .type{
+    line-height: 60px;
+     font-size: 12px;
+     display: inline-block;
+ }
+ 
+ .type-publishers .publishers{
+     line-height: 60px;
+     margin-left: 20px;
+     font-size: 12px;
+     display: inline-block;
+ }

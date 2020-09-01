@@ -1,0 +1,38 @@
+*{
+    margin: 0 ; 
+    padding: 0;
+}
+.table {
+    margin: 0 auto;
+    width: 700px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse:collapse;
+    }
+    
+.title {
+    background-color: #F2F3F5;
+    }
+    
+
+    
+th {
+    font-size: 16px;
+    font-weight: bold;
+    }
+    
+td {
+    font-size: 14px;
+    }
+tr{
+        height: 20px;
+    }
+th,td {
+    border-left: 1px solid black;
+    border-top: 1px solid #000;
+    text-align: center;
+    }
+.selected{
+    background-color: red;
+}
+    

@@ -1,0 +1,22 @@
+<div>
+    <input type="text" [(ngModel)]="searchTxt" >
+    <button (click)="search()">search</button>
+    <button (click)="addRow()">add</button>
+    <button (click)="delRow()">del</button>
+    <button (click)="editRow()">edit</button>
+    <button (click)="saveRow()">save</button>
+    <button (click)="reset()">reset</button>
+</div> 
+
+<table class="table">
+    <tr class="title">
+        <th *ngFor="let head of tableHead">{{head}}</th>
+    </tr>
+    <tr *ngFor="let data of tableData index as key" (click)="trClick($event,key)"  [ngClass]="{'selected': currSelected==key}" >
+        <td><span *ngIf="currEdit!=key" >{{data.Name}}</span>   <input type="text" *ngIf="currEdit==key" [(ngModel)]="tableData[key].Name"> </td>
+        <td><span *ngIf="currEdit!=key" >{{data.Director}}</span> <input type="text" *ngIf="currEdit==key" [(ngModel)]="tableData[key].Director"> </td>
+        <td><span *ngIf="currEdit!=key" >{{data.Year}}</span>  <input type="text" *ngIf="currEdit==key" [(ngModel)]="tableData[key].Year"></td>
+        <td><span *ngIf="currEdit!=key" >{{data.Genere}}</span>  <input type="text" *ngIf="currEdit==key" [(ngModel)]="tableData[key].Genere"></td>
+        <td><span *ngIf="currEdit!=key" >{{data.Notes}}</span>  <input type="text" *ngIf="currEdit==key" [(ngModel)]="tableData[key].Notes"></td>
+    </tr>
+</table>

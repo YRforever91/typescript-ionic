@@ -1,0 +1,12 @@
+*{
+    margin: 0 ; 
+    padding: 0;
+}
+p{
+    width: 960px;
+    background-color: rgb(23, 209, 255);
+    font-size: 25px;
+    color:red;
+    font-weight: bold;
+    margin:0px auto;
+}

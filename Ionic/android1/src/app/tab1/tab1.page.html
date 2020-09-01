@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      文字转换
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item > 
+    <ion-label> 文字： </ion-label>
+    <ion-textarea color="primary" placeholder="请输入要转换的文字..."  [(ngModel)]="convertText"> </ion-textarea>
+  </ion-item>
+  <ion-item >
+    <ion-label> 速度： </ion-label>
+    <ion-range min="0" max="1" step="0.1" snaps="true" color="secondary" [(ngModel)]="speed"></ion-range>
+  </ion-item>
+  
+  <ion-button  fill="solid" expand="block" (click)="onConvert()" > 
+    <ion-icon slot="start" class="ion-zhuanhuan"> </ion-icon>转换
+  </ion-button>
+
+  <ion-button  fill="solid" expand="block" (click)="onStop()" > 
+    <ion-icon name="stop-circle-outline"></ion-icon>停止
+  </ion-button>
+
+
+</ion-content>

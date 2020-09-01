@@ -1,0 +1,21 @@
+#main{
+    width: 1000px;
+    margin: 0 auto;
+}
+#nav{
+    width: 800px;
+    height: 36px;
+    margin: 0 auto;
+}
+#nav ul{
+    width: 700px;
+    height: 36px;
+    margin: 0 auto;
+    padding-left: 70px;
+}
+#nav li{
+    list-style-type: none;
+    width: 100px;
+    height: 36px;
+    float: left;
+}

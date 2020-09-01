@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      编辑
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content > 
+  <ion-list lines ="full"  inset="true" mode="md"> 
+    <ion-item *ngFor="let io of arrays" >
+      <div class="item" (click)=itemClick(io) >
+          <div class="id-name">
+           <h3 class="id">{{io.id}}</h3> 
+           <h3 class="name"> {{io.name}}</h3>
+          </div>
+          <div class="type-publishers">
+            <h3 class="type" (click)=itemTypeClick(io)>{{io.type}}</h3> 
+            <h3 class="publishers" > {{io.publishers}}</h3>
+          </div>
+      </div>
+    </ion-item>  
+  </ion-list>
+</ion-content>
+
+

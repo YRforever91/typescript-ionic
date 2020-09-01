@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      电池状态
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content > 
+
+  <ion-item>
+    <ion-label>状态：</ion-label>
+    <ion-input type="text"   [(ngModel)]="_status" disabled> </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>电量：</ion-label>
+    <ion-input type="text"  [(ngModel)]="_battery" disabled> </ion-input>
+  </ion-item>
+
+</ion-content>
